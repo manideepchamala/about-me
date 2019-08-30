@@ -47,6 +47,6 @@ The first two links mentioned below are very useful video tutorials for the ones
 
 ## Contributors
 
-My name is Sushma.I'm pursuing my masters in Applied Computer Science at Northwest. This picture will always be my favorite as my brother has shot this photo after 4 long years that's when I met him after a very long period and that's the "Happy me" picture.  
+My name is Sushma. I'm pursuing my masters in Applied Computer Science at Northwest. This picture will always be my favorite as my brother has shot this photo after 4 long years that's when I met him after a very long period and that's the "Happy me" picture.  
 
 ![](sushma.JPG)
