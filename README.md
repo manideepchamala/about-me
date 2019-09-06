@@ -14,7 +14,7 @@ This Repository mainly gives the details about myself and mostly the overview of
 
 Any Chromium-Based Browser
 
-* Google Chrome
+* [Google Chrome](https://www.google.com/chrome/)
 * Opera(old is gold)
 * Opera Neon(in near future)
 * Chromium
