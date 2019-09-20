@@ -1,9 +1,23 @@
 body {
     padding-top: 5rem;
   }
+
+  h1,h2{
+
+    color: floralwhite;
+  }
   
   body, html {
     height: 100%;
+  }
+  .text{
+    font-size: 23px;
+    color: chartreuse;
+  }
+  .link{
+    color: white;
+    font-size: 20px;
+
   }
   
   #img-circle{
@@ -23,7 +37,7 @@ body {
     margin: 1rem;
     padding: 2rem;
     background-color:coral;
-    border-radius: 2em;
+    border-radius: 1em;
   }
   
   .bgimg {
