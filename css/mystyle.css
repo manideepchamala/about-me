@@ -1,0 +1,42 @@
+body {
+    padding-top: 5rem;
+  }
+  
+  body, html {
+    height: 100%;
+  }
+  
+  #img-circle{
+    border-radius: 50%;
+  }
+  .video-wrapper {
+    width: 100%;
+    background-color: lightblue;
+  }
+  .img{
+
+    height: 50px;
+    width: 50px;
+
+  }
+  section {
+    margin: 1rem;
+    padding: 2rem;
+    background-color:coral;
+    border-radius: 2em;
+  }
+  
+  .bgimg {
+    background-image: url("stars.jpg");
+    height: 100%;
+    position: relative;
+    opacity: 0.85;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+  }
+  
+  
+  
+  
