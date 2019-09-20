@@ -37,7 +37,7 @@ body {
     margin: 1rem;
     padding: 2rem;
     background-color:coral;
-    border-radius: 1em;
+    border-radius: 1sem;
   }
   
   .bgimg {
@@ -49,6 +49,10 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed; 
+  }
+  .footer-section{
+
+    color: white;
   }
   
   

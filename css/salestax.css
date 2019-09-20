@@ -23,6 +23,21 @@ table{
   border-width: 2px;
   border-radius: 5px;
 }
+.footer-section{
+
+  color: white;
+}
+
+.bgimg {
+  background-image: url("stars.jpg");
+  height: 100%;
+  position: relative;
+  opacity: 0.85;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; 
+}
 
 
 
