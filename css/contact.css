@@ -37,6 +37,9 @@
 .myForm fieldset {
    border: 0; 
 }
+.img{
+  width: 5%;
+}
 .taxi > label,
 .extras > label {
   display: block;
