@@ -1,119 +1,123 @@
 <!doctype html>
 <html lang="en">
-        <head>
-                <meta name="author" content="Sushma Yedugani">
-                  <!-- Bootstrap required meta tags-->
-  <meta charset="UTF8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- Link to CSS-->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-    crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/salestax.css">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Sales tax calculator</title>
+  <title>Interactive App</title>
+
+  <meta name="description" content="Interactive app">
+  <meta name="author" content="Denise Case">
+
+  <!-- get current Bootstrap Material Design styles from https://mdbootstrap.com/md-bootstrap-cdn/ -->
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/css/mdb.min.css" rel="stylesheet">
+
+  <!-- required for sticky footer -->
+  <style>
+    body,
+    .sticky-footer-wrapper {
+      min-height: 100vh;
+    }
+  </style>
 
 </head>
-<body class="bgimg">
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-          <a class="navbar-brand"  href="index.html"></a> 
-          <img id="img-circle" src="sushma.JPG" alt="profile pic" width="75" height="75">
-        </a>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="salestax.html">TaxCalculator</a>
-              </li>
-            </ul>
-            
-      
-          </div>
-        </nav>
-        <header class="container-fluid">
-                <h1>Sushma Yedugani</h1>
-              </header>
 
-<center>
-        <div class ="form">
-                <h2> Sales Tax Calculator</h5>
-                <form name="orderform" id="orderform">
-                <table>
-        </div>
-          <tr><th>
-           <label>Product: </label>
-          </th>
-          <th scope="row">
-           <div align="left">
-            <label><span>$</span></label>
-            <input name="price" type="text" id="price" size="10">
-           </div>
-          </th>
+<body class="bgimg">
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand"  href="index.html"></a> 
+    <img id="img-circle" src="sushma.JPG" alt="profile pic" width="75" height="75">
+  </a>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="salestax.html">Area calculator</a>
+        </li>
+      </ul>
+      
+
+    </div>
+  </nav>
+  <header class="container-fluid">
+          <h1>Sushma Yedugani</h1>
+        </header>
+  <main class="container mt-5 flex-fill">
+
+    <!--Container has rows - first row -->
+    <div class="row">
+
+      <!--Rows have columns - column 1 (7/12) -->
+      <div class="col-md-12 mb-4">
+
+        <h2>area of a trapezoid</h2>
+        <hr>
+
+        <fieldset class="mt-4">
+          <label for="firstNumber">Enter the top base.</label>
+          <input id="firstNumber" type="number" min="1" max="100">
+        </fieldset>
+
+        <fieldset class="mt-4">
+          <label for="secondNumber">Enter the bottom base.</label>
+          <input id="secondNumber" type="number" min="1" max="100">
+          <span id="firstWarning" class="text-danger"></span>
+        </fieldset>
+
+        <fieldset class="mt-4">
+          <label for="thirdNumber">Enter the height.</label>
+          <input id="thirdNumber" type="number" min="1" max="100">
+          <span id="secondWarning" class="text-danger"></span>
+        </fieldset>
+
+      </div>
+      <!--end column 1-->
+
+      <!--column 2 (5/12) -->
+      <div class="col-md-5 mb-4">
         
-          
-          <tr><th>
-           <label>Quantity</label>
-          </th>
-          <th scope="row">
-           <div align="left">
-            <label><span>#</span></label>
-            <input name="quantity" type="text" id="quantity" size="10">
-           </div>
-          </th>
-         
-          <tr><th>
-           <label>Subtotal:</label>
-          </th>
-          <th scope="row">   
-           <div align="left">
-            <label>$</label>
-            <input name="subtotal" type="text" id="subtotal" onFocus="this.form.elements[1].focus()" size="10"> &nbsp;&nbsp;
-            <input name="subBtn" onClick="subTotal();" type="button" id="subBtn" value="Subtotal">
-           </div>
-          </th>
-         </tr>
-          
-           <tr><th>
-           <label>Tax:</label>
-          </th>
-           <th scope="row">
-           <div align="left">
-            <label>$</label>
-             <input name="salestax" type="text" id="salestax" onFocus="this.form.elements[1].focus()" size="10"> &nbsp;&nbsp;               
-             <input name="taxBtn" onClick="calculateTax();" type="button" id="taxBtn" value="Tax">  
-           </div>
-          </th>
-         </tr>
-         
-          <tr><th>
-           <label>Total:</label>
-          </th>
-          <th scope="row">
-           <div align="left">
-            <label>$</label>
-            <input name="gtotal" type="text" id="gtotal" onFocus="this.form.elements[2].focus()" size="10"> &nbsp;&nbsp;
-            <input name="gtotalBtn" onClick="grandTotal();" type="button" id="gtotalBtn" value="Calculate Order">
-           </div>
-          </th>
-         </tr>
-        </table>
-        </form>      
-        </div>
-        </center>
-        <footer class="container-fluid  footer-section">
-                &copy; 2019
-              </footer>
-              <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-                crossorigin="anonymous"></script>
-              <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-                crossorigin="anonymous"></script>
-              <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-                crossorigin="anonymous"></script>
-            </body>
-            
-            </html>
+        <hr>
+        <button id="areatrap" class="btn btn-primary">Area of trapezoid</button>
+     
+        <hr>
+        <p id="result"></p>
+
+      </div>
+      <!-- end column 2-->
+
+    </div>
+    <!-- end row 1 -->
+
+  </main>
+
+  <!-- sticky footer with padding on y-axis (top and bottom) -->
+  <footer class="footer mt-auto py-3 bg-light">
+    <div class="container">
+      
+      &#9670;
+      <span class="text-muted"><a href="test/qunit.html">View Tests</a></span>
+     
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/js/mdb.min.js"></script>
+
+  <script src="src/tax.js"></script>
+
+</body>
+
+</html>
