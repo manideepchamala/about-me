@@ -5,6 +5,11 @@ table{
   border-radius: 5px;
   background-color:blue;
 }
+.text_color{
+
+  background-color: palegreen;
+
+}
 #subBtn{
   border-style: solid;
   border-color: black;
@@ -29,7 +34,7 @@ table{
 }
 
 .bgimg {
-  background-image: url("stars.jpg");
+  
   height: 100%;
   position: relative;
   opacity: 0.85;
