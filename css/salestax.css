@@ -38,6 +38,14 @@ table{
   background-size: cover;
   background-attachment: fixed; 
 }
+#areatrap{
+
+  color: mediumblue;
+
+}
+.text_color{
+  background-color: indianred;
+}
 
 
 

@@ -5,7 +5,7 @@ QUnit.test( "Test area of trapezium", function( assert ) {
     assert.equal(testcalculations(2, 2, 2.5), 5, "calculating the area of trapezoid gives the value 5 with the given inputs")
     assert.equal(testcalculations(2, 1, 2), 3, "calculating the area of trapezoid gives the value 3 with the given inputs")
     assert.equal(testcalculations(1, 4, 3), 7.5, "calculating the area of trapezoid gives the value 7.5 with the given inputs")
-    assert.equal(testcalculations(1, 4, 2), 5, "calculating the area of trapezoid gives the value 5 with the given inputs")
+    assert.equal(testcalculations(-1, 4, 2), 5, "calculating the area of trapezoid gives the value 5 with the given inputs")
 })
 window.addEventListener('load', () => {
     const appURL = '../salestax.html' 

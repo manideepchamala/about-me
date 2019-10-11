@@ -53,10 +53,10 @@
   <header class="container-fluid">
           <h1>Sushma Yedugani</h1>
         </header>
-  <main class="container mt-5 flex-fill">
+  <main class="container mt-5 flex-fill ">
 
     <!--Container has rows - first row -->
-    <div class="row">
+    <div class="row text_color">
 
       <!--Rows have columns - column 1 (7/12) -->
       <div class="col-md-12 mb-4">
@@ -80,7 +80,8 @@
           <input id="thirdNumber" type="number" min="1" max="100">
           <span id="secondWarning" class="text-danger"></span>
         </fieldset>
-
+        
+        
       </div>
       <!--end column 1-->
 
@@ -89,13 +90,15 @@
         
         <hr>
         <button id="areatrap" class="btn btn-primary">Area of trapezoid</button>
-     
+        <button id="btn">VARIOUS SHAPE NAMES</button>
+        
         <hr>
         <p id="result"></p>
-
+        <div id="area"></div>
+        
       </div>
       <!-- end column 2-->
-
+     
     </div>
     <!-- end row 1 -->
 
@@ -115,9 +118,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/js/mdb.min.js"></script>
-
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="src/tax.js"></script>
-
+  <script src="src/salejson.js"></script>
 </body>
 
 </html>

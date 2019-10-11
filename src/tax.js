@@ -1,3 +1,8 @@
+
+
+
+
+
 function calculations() {
     
   //Passes string and returns float
@@ -27,11 +32,24 @@ if(height<0){
   localStorage.setItem('height1', height)
 
   //Modifying HTML page with the calculations output
-  document.querySelector('#result').innerHTML = `${area}`
+  document.querySelector('#result').innerHTML = `Area of trapezoid is ${area}`
 }
 
 function testcalculations(top, bottom,height){
-  return ((top+bottom)*height)/2
+  
+  if(top<0){
+    throw new Error( "top shouldn't be negative");
+}
+if(bottom<0){
+    throw new Error( "bottom shouldn't be negative");
+}
+if(height<0){
+    throw new Error( "height shouldn't be negative");
+}
+else{
+  return ((top+bottom)*height)/2;
+}
+  
 }
 
 //On click perform the calculation function
